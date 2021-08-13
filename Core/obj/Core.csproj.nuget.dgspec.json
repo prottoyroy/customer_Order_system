@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj": {}
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\core\\Core.csproj": {}
   },
   "projects": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj": {
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj",
+        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj",
+        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\core\\Core.csproj",
         "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\obj\\",
+        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -233,11 +233,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
+      "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
+      "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
       "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-      "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\obj\\",
+      "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -257,8 +257,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj"
+            "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\infrastructure\\Infrastructure.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "emT1xibn3tOLjj9NJkPZ9LzkhrE9c3nFh37A3v+4WqRnfHG0FY2lyK7evm3w80Exa69dPRZ8RpLDO2BQ7EhLrw==",
+  "dgSpecHash": "wfsRzPqMIxMMlXYHmch/VyEKlumXpZjnjLWuF7IrYE+2MBoEMd08fe6eoyLLnDoS2MNU+tstKmExLcfLka3iSg==",
   "success": true,
-  "projectFilePath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

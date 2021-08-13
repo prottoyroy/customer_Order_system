@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5qT/10ZakdYFFp9dc0iYGyiJIgT6eBBzbt+11dpyxvv+fMsVuPKjiJJKdtKTVzgaO1Aq0Z7UpKmMgCLYTRhC4A==",
+  "dgSpecHash": "MI4/MMp//0Liada9HbD7tttrYgDve5MFTfLM9idcE2DJF96hNlPXOQVsdZsDLlxI3unDgAFRAYHHfVDZI3oKDA==",
   "success": true,
-  "projectFilePath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
+  "projectFilePath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nazim-satcom\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\nazim-satcom\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
