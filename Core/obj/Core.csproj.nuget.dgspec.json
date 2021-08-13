@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj": {}
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Core\\Core.csproj": {}
   },
   "projects": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj": {
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
-        "projectName": "API",
-        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
+        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\obj\\",
+        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,12 +42,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -59,9 +53,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
