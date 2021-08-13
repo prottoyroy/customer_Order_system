@@ -13,3 +13,6 @@ D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\infrastructure\o
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\infrastructure\obj\Debug\net5.0\Infrastructure.dll
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache

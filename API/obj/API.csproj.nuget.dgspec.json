@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj": {}
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj": {
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
+        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
+        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\api\\API.csproj",
         "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\obj\\",
+        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -47,6 +47,16 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -112,6 +122,40 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -173,6 +217,40 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

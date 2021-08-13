@@ -10,3 +10,6 @@ D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\obj\Debug\n
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\obj\Debug\net5.0\Core.dll
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\obj\Debug\net5.0\ref\Core.dll
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\obj\Debug\net5.0\Core.pdb
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\bin\Debug\net5.0\Core.runtimeconfig.json
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\core\obj\Debug\net5.0\Core.genruntimeconfig.cache
