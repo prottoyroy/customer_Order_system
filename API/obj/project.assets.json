@@ -75,6 +75,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -185,10 +208,21 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../core/Core.csproj",
+      "msbuildProject": "../core/Core.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -199,11 +233,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\API\\API.csproj",
+      "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\API\\API.csproj",
+      "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
       "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-      "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\API\\obj\\",
+      "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -222,7 +256,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

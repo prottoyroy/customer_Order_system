@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj": {}
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj": {
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
+        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\API.csproj",
+        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\API.csproj",
         "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerOrderSystem\\API\\obj\\",
+        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,7 +30,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +66,124 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj",
+        "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
+        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nazim-satcom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
+        "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nazim-satcom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj": {
+                "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

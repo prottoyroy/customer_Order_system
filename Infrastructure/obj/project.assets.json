@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../core/Core.csproj",
+      "msbuildProject": "../core/Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\nazim-satcom\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\nazim-satcom\\.nuget\\packages\\",
-      "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\Infrastructure\\obj\\",
+      "outputPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -37,7 +56,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj": {
+              "projectPath": "D:\\Own-Practice\\demo_profect_customer_order\\customerordersystem\\core\\Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
