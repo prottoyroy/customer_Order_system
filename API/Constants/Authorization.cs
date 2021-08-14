@@ -11,6 +11,7 @@ namespace API.Constants
         public const string default_username = "defaultUser";
         public const string default_email = "defaultUser@gmail.com";
         public const string default_password = "Pa$$w0rd.";
-        public const Roles default_role = Roles.User;
-    }
+        public const Roles default_role = Roles.Administrator;
+        
+}
 }

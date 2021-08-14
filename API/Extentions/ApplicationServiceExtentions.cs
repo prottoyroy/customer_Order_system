@@ -13,8 +13,9 @@ namespace API.Extentions
     {
       public static IServiceCollection AddApplicationService(this IServiceCollection services, IConfiguration config)
         {
-            
-            services.AddScoped<IUserService, UserService>();
+            services.AddAutoMapper(typeof(Startup));
+            services.AddScoped<ICustomerService, CustomerService>();
+             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<ApplicationDbContext>(options =>
             {

@@ -9,7 +9,7 @@ using Microsoft.Extensions.Options;
 
 namespace Infrastructure.Services
 {
-    public class UserService : IUserService
+    public class CustomerService : ICustomerService
     {
 
         private readonly UserManager<ApplicationUser> _userManager;
@@ -17,7 +17,7 @@ namespace Infrastructure.Services
         private readonly ApplicationDbContext _context;
         private readonly ITokenService _tokenService;
 
-        public UserService(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt,
+        public CustomerService(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt,
        
 
         ApplicationDbContext context, ITokenService tokenService)
@@ -100,7 +100,7 @@ namespace Infrastructure.Services
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
-                await _userManager.AddToRoleAsync(user, DefaulUserRole.default_role.ToString());
+                await _userManager.AddToRoleAsync(user, DefaulUserRole.default_roleCustomer.ToString());
                 response.Data = user.UserName;
                 response.Message = "user registration done! ";
             }

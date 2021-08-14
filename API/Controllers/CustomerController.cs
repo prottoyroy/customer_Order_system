@@ -7,8 +7,8 @@ namespace API.Controllers
 {
     public class CustomerController : BaseApiController
     {
-        private readonly IUserService _userService;
-        public CustomerController(IUserService userService)
+        private readonly ICustomerService _userService;
+        public CustomerController(ICustomerService userService)
         {
             _userService = userService;
 

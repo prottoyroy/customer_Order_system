@@ -69,3 +69,5 @@ D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\api\bin\Debug\ne
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\api\bin\Debug\net5.0\Humanizer.dll
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\API\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\API\bin\Debug\net5.0\AutoMapper.dll
+D:\Own-Practice\demo_profect_customer_order\customerOrderSystem\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

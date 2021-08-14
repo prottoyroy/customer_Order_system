@@ -3,10 +3,11 @@ using Core.Models;
 
 namespace Core.Interfaces
 {
-    public interface IUserService
+    public interface ICustomerService
     {
         Task<ServiceResponse<string>> RegisterAsync(RegisterModel model);
         Task<ServiceResponse<LogInResponse>> LogInAsync(LogInModel model);
+        
 
 
     }

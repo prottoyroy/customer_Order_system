@@ -48,20 +48,28 @@ namespace API
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-                .AddJwtBearer(o =>
+            // services.AddAuthentication(options =>
+            // {
+            //     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            // })
+               .AddJwtBearer(o =>
                 {
                     o.RequireHttpsMetadata = false;
                     o.SaveToken = false;
                     o.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
                         ValidateLifetime = true,
                         ClockSkew = TimeSpan.Zero,
-                        ValidIssuer = _config["JWT:Issuer"],
-                        ValidAudience = _config["JWT:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["JWT:Key"]))
+                       // ValidIssuer = false,
+                        //ValidAudience = false,
+                        
+                        // ValidIssuer = _config["TokenKey"],
+                        // ValidAudience = _config["TokenKey"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["TokenKey"]))
                     };
                 });
             
@@ -69,10 +77,38 @@ namespace API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
-            });
-        }
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CustomerOrderApi", Version = "v1" ,Description="An API to perform Customer Orders",
+                Contact=new OpenApiContact
+                {
+                    Name="Prottoy Roy",
+                    Email="prottoyroyaiub@gmail.com"
+                }
+                
+                 });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme {
+                In = ParameterLocation.Header, 
+                Description = "Please insert JWT with Bearer into field",
+                Name = "Authorization",
+                Type = SecuritySchemeType.ApiKey 
 
+                // c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+                
+            });
+            c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+   { 
+     new OpenApiSecurityScheme 
+     { 
+       Reference = new OpenApiReference 
+       { 
+         Type = ReferenceType.SecurityScheme,
+         Id = "Bearer" 
+       } 
+      },
+      new string[] { } 
+    } 
+  });
+        });
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
