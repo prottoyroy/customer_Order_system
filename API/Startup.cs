@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using API.Extentions;
+using Core.Interfaces;
 using Core.Models;
 using Infrastructure.Data;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +37,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             //Configuration from AppSettings
             services.Configure<JWT>(_config.GetSection("JWT"));
             services.AddApplicationService(_config);
@@ -88,6 +91,7 @@ namespace API
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.ConfigureBuildInExceptionHandler();
             app.UseDefaultFiles();
             app.UseStaticFiles();
 

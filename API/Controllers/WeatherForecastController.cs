@@ -26,6 +26,7 @@ namespace API.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -34,6 +35,14 @@ namespace API.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+        [HttpGet("error")]
+        public IActionResult Test(int number)
+        {
+            if(number==2)
+            throw new Exception("global");
+            return  BadRequest("lol");
+
         }
     }
 }

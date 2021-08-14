@@ -1,5 +1,7 @@
+using Core.Interfaces;
 using Core.Models;
 using Infrastructure.Data;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -12,14 +14,15 @@ namespace API.Extentions
       public static IServiceCollection AddApplicationService(this IServiceCollection services, IConfiguration config)
         {
             
-           
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
             });
             services.AddIdentity<ApplicationUser, IdentityRole>()  
-                .AddEntityFrameworkStores<ApplicationDbContext>()  
-                .AddDefaultTokenProviders();  
+                .AddEntityFrameworkStores<ApplicationDbContext>()  ;
+                //.AddDefaultTokenProviders();  
 
             return services;
         }
