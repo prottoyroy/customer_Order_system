@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core.Interfaces;
@@ -30,6 +31,14 @@ namespace Infrastructure.Services
             .SingleOrDefaultAsync(s =>s.OrderId==orderId);
             return order;
                 
+        }
+
+        public async Task<List<Order>> GetOrdersAsync()
+        {
+            var order = await _context.Orders.Include( a =>a.ApplicationUser)
+            .Include(i => i.OrderItems)
+            .ThenInclude(p =>p.Product).ToListAsync();
+            return order;
         }
     }
 }

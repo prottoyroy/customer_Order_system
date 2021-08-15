@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Interfaces;
 using Core.Models;
+using Core.Pagging;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -45,9 +46,31 @@ namespace Infrastructure.Services
             return await _context.Products.SingleOrDefaultAsync(s => s.ProductId == productId);
         }
 
-        public async Task<List<Product>> GetProductsAsync()
+        public async Task<List<Product>> GetProductsAsync(string sortBy,string searchString,int? pageNumber)
         {
-            return await _context.Products.ToListAsync();
+            var products  = await _context.Products.OrderBy(o =>o.ProductName ==sortBy).ToListAsync();
+            //sorting
+            if(!string.IsNullOrEmpty(sortBy))
+            {
+                switch(sortBy)
+                {
+                    case "name-desc": 
+                    products = await _context.Products.OrderByDescending(o =>o.ProductName ==sortBy).ToListAsync();
+                    break;
+                    default:
+                    break;
+                }
+            }
+            //filtering
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                 products =products.Where(n =>n.ProductName.Contains(searchString)).ToList();
+            }
+            //pagging
+            int pageSize = 5;
+            products =PagginatedList<Product>.Create(products.AsQueryable(),pageNumber??1,pageSize);
+            return products;
+            //return await _context.Products.ToListAsync();
         }
 
         public async Task<Product> UpdateProductAsync(int productId, Product product)

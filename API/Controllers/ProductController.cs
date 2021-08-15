@@ -48,9 +48,9 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(string sortBy ,string searchString ,int? pageNumber)
         {
-            var products = await _productService.GetProductsAsync();
+            var products = await _productService.GetProductsAsync(sortBy,searchString ,pageNumber);
             var productsResponse = _mapper.Map<List<ProductResponse>>(products);
             return Ok(productsResponse);
         }
