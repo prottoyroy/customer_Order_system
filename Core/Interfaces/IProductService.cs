@@ -9,5 +9,8 @@ namespace Core.Interfaces
         Task<List<Product>> GetProductsAsync();
         Task<Product> GetProductAsync(int productId);
         Task<bool> CreateProductAsync(Product product);
+        Task<Product> UpdateProductAsync(int productId, Product product);
+       void DeleteProduct(int productId);
+        
     }
 }

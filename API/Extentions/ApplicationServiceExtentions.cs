@@ -15,7 +15,8 @@ namespace API.Extentions
         {
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<ICustomerService, CustomerService>();
-             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<ApplicationDbContext>(options =>
             {

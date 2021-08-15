@@ -87,6 +87,8 @@ namespace Infrastructure.Services
             FirstName = model.FirstName,
             LastName = model.LastName,
             SecurityStamp = Guid.NewGuid().ToString(),
+            EmailConfirmed=true,
+            PhoneNumberConfirmed=true
         };
         var userWithSameEmail = await _userManager.FindByEmailAsync(model.Email);
         if (userWithSameEmail != null)
